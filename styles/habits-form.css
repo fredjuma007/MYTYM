@@ -1,0 +1,131 @@
+#habits-form {
+  width: 100%;
+  display: none;
+  gap: 28px;
+
+  padding-bottom: 80px;
+}
+
+/* estilização dos ícones dos hábitos */
+
+#habits-form #habits {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 28px;
+  margin-top: 52px;
+  color: var(--white);
+
+  width: 64px;
+}
+
+#habits-form #habits .habit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  z-index: 1;
+
+  height: 64px;
+}
+
+#habits-form #habits .habit .habit-icon {
+  width: 64px;
+  height: 64px;
+
+  text-align: center;
+  font-size: 64px;
+
+  cursor: pointer;
+
+  transition: all 100ms ease-in;
+}
+
+#habits-form #habits .habit .habit-icon:hover {
+  opacity: 0.7;
+  transform: scale(0.9);
+}
+
+#habits-form #habits .habit .habit-icon-relative {
+  position: relative;
+  left: 18px;
+  z-index: 1;
+}
+
+#habits-form #habits .habit .habit-details {
+  position: relative;
+  left: -64px;
+  display: none;
+  align-items: center;
+  gap: 15px;
+  height: 80px;
+  padding: 0px 30px 0px 100px;
+  font-size: 23px;
+  border-radius: 40px;
+  background: var(--gray);
+}
+
+#habits-form #habits .habit .habit-details p {
+  white-space: nowrap;
+}
+
+#habits-form #habits .habit .habit-details span {
+  color: var(--orange);
+  font-size: 32px;
+
+  cursor: pointer;
+}
+
+#habits-form #habits .habit .habit-details span:hover {
+  opacity: 0.7;
+  transform: scale(0.9);
+
+  transition: all 100ms ease-in;
+}
+
+/* estilização do calendário de hábitos */
+
+#habits-form #calendar {
+  display: flex;
+  gap: 28px;
+  overflow-x: overlay;
+  padding-bottom: 50px;
+}
+
+#habits-form #calendar .day {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 28px;
+}
+
+#habits-form #calendar .day p {
+  color: var(--orange);
+  font-family: "Roboto mono", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#habits-form #calendar .day input {
+  width: 64px;
+  height: 64px;
+  appearance: none;
+  cursor: pointer;
+  border: 2.5px solid #ff7b31;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: all 75ms ease-in;
+}
+
+#habits-form #calendar .day input:checked {
+  background-color: var(--orange);
+}
+
+#habits-form #calendar .day input:hover {
+  opacity: 0.7;
+}
+
+#habits-form #calendar .day input:disabled {
+  opacity: 0.7;
+  cursor: initial;
+}
