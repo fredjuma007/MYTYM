@@ -10,9 +10,9 @@
 </p>
 
 <h2 id="whatis">🤔 What is it</h2> 
-<p>MYTYM is a website that allows you to craate and monitor your daily habits. Simply helps your create good habits and overcome addiction❤️</p>
+<p>MYTYM is a website that allows you to craate and monitor your daily habits. Simply helps your create good habits and overcome addiction. Click on the image below to visit site now❤️</p>
 
-<a target="_blank" href="web url goes here"> 
+<a target="_blank" href="http://localhost/MYTYM/"> 
     <img src="./assets/images/logo.svg"/>
 </a>
 
