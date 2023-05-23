@@ -26,9 +26,14 @@
 
 <h3>Desktop</h3>
 
-<img src="https://i.imgur.com/6xKhlP1.gif"/>
+<h4 align="center"> 
+	demo gif coming soon
+	</h4>
 
 <h3>Mobile</h3>
+<h4 align="center"> 
+	demo gif coming soon
+	</h4>
 
 <img src="https://i.imgur.com/JR2c05j.gif"/>
 
