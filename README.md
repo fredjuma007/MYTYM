@@ -10,16 +10,14 @@
 </p>
 
 <h2 id="whatis">🤔 What is it</h2> 
-<p>O habits é um website que te permite criar e monitorar os seus hábitos diários, de forma simples, te ajudando a criar bons hábitos ❤️</p>
+<p>MYTYM is a website that allows you to craate and monitor your daily habits. Simply helps your create good habits and overcome addiction❤️</p>
 
-<a target="_blank" href="https://cardtunic.github.io/habits/">
+<a target="_blank" href="web url goes here"> 
     <img src="https://i.imgur.com/kia1lfE.png"/>
 </a>
 
-_<p>Esse site foi criado durante a NLW-Setup, em uma semana. A ideia e inspiração para o design foram retirados de lá.</p>_
-
 <h4 align="center"> 
-	🚧 Esse projeto não está completo 🚧
+	🚧 Project still has room for improvement. Still a work in progress. not complete 🚧
 </h4>
 
 ---
