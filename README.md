@@ -39,11 +39,11 @@
 
 <h2 id="features">✨ Features</h2>
 
-- Criar e manipular novos hábitos, com ícone e nomes personalizados
-- Marcar hábitos que foram completos no dia
-- Exibir hábitos ao dia atual correspondente
-- Exibir histórico de hábitos
-- Aplicação disponível em: pt-BR, pt-PT, en-US, de-DE, es-ES e it-IT
+- Create and manipulate new habits, with custom icons & names
+- Mark habits that were completes onm the day
+- Display habits to the current day corresponding
+- View habbit history
+- Website available in: pt-BR, pt-PT, en-US, de-DE, es-ES e it-IT
 
 ---
 
