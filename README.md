@@ -13,7 +13,7 @@
 <p>MYTYM is a website that allows you to craate and monitor your daily habits. Simply helps your create good habits and overcome addiction❤️</p>
 
 <a target="_blank" href="web url goes here"> 
-    <img src="./assets/images"/>
+    <img src="./assets/images/logo.svg"/>
 </a>
 
 <h4 align="center"> 
