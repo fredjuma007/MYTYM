@@ -13,7 +13,7 @@
 <p>MYTYM is a website that allows you to craate and monitor your daily habits. Simply helps your create good habits and overcome addiction❤️</p>
 
 <a target="_blank" href="web url goes here"> 
-    <img src="https://i.imgur.com/kia1lfE.png"/>
+    <img src="./assets/images"/>
 </a>
 
 <h4 align="center"> 
@@ -32,7 +32,6 @@
 
 <img src="https://i.imgur.com/JR2c05j.gif"/>
 
-<p>O layout do site foi criado usando o Figma, e foi inspirado no design oferecido pelos organizadores do NLW-Setup para o público.</p>
 
 <a target="_blank" href="https://www.figma.com/file/rK5jkJOJnE1ylZiOXWJua1/habits.?node-id=473%3A87&t=tkWdrfgm1dn4OLJT-1">
     <img src="https://img.shields.io/static/v1?label=Acesse o layout&message=FIGMA&color=f14e1e&style=for-the-badge&logo=<LOGO>"/>
