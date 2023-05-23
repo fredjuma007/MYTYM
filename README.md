@@ -35,13 +35,6 @@
 	demo gif coming soon
 	</h4>
 
-<img src="https://i.imgur.com/JR2c05j.gif"/>
-
-
-<a target="_blank" href="https://www.figma.com/file/rK5jkJOJnE1ylZiOXWJua1/habits.?node-id=473%3A87&t=tkWdrfgm1dn4OLJT-1">
-    <img src="https://img.shields.io/static/v1?label=Acesse o layout&message=FIGMA&color=f14e1e&style=for-the-badge&logo=<LOGO>"/>
-</a>
-
 ---
 
 <h2 id="features">✨ Features</h2>
