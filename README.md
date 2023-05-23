@@ -1,16 +1,15 @@
 <img src="https://i.imgur.com/LBMFNWk.png"/>
 
 <p align="center">
- <a href="#whatis">O que é?</a> •
- <a href="#demo">Demonstração</a> •
+ <a href="#whatis">What is it?</a> •
+ <a href="#demo">Demo</a> •
  <a href="#features">Features</a> •
  <a href="#goals">Metas</a> •
- <a href="#tech">Tecnologias</a> • 
- <a href="#author">Autor</a> • 
- <a href="#licence">Licença</a>
+ <a href="#tech">Technologies</a> • 
+ <a href="#author">Authors</a> •
 </p>
 
-<h2 id="whatis">🤔 O que é?</h2> 
+<h2 id="whatis">🤔 What is it</h2> 
 <p>O habits é um website que te permite criar e monitorar os seus hábitos diários, de forma simples, te ajudando a criar bons hábitos ❤️</p>
 
 <a target="_blank" href="https://cardtunic.github.io/habits/">
@@ -25,7 +24,7 @@ _<p>Esse site foi criado durante a NLW-Setup, em uma semana. A ideia e inspiraç
 
 ---
 
-<h2 id="demo">💻 Demonstração</h2>
+<h2 id="demo">💻 Demo</h2>
 
 <h3>Desktop</h3>
 
@@ -65,7 +64,7 @@ _<p>Esse site foi criado durante a NLW-Setup, em uma semana. A ideia e inspiraç
 
 ---
 
-<h2 id="tech">🔧 Tecnologias</h2> 
+<h2 id="tech">🔧 Technologies</h2> 
 Tudo isso foi feito com:
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
@@ -74,5 +73,5 @@ Tudo isso foi feito com:
 
 ---
 
-<h2 id="author">👤 Autor</h2>
-
+<h2 id="author">👤 Authors</h2>
+FRED JUMA
