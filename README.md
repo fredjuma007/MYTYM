@@ -49,18 +49,18 @@
 
 <h2 id="goals">🎯 Metas</h2>
 
-- [x] Refatorar partes do código
-- [x] Adicionar a possibilidade de excluir hábitos
-- [x] Adicionar suporte a múltiplas linguagens
-- [ ] Concertar incongruências no layout
-- [ ] Separar histórico de hábitos por meses
-- [ ] Adicionar barra de pesquisa para ícones
-- [ ] Sincronizar hábitos entre dispositivos
+- [x] Refactor parts of code
+- [x] Add the ability to delete habits
+- [x] Add multiple language support
+- [ ] Fix inconsistencies in the layout
+- [ ] Separate habits history by month
+- [ ] Add search bar for icons
+- [ ] Sychronise habits between multiple devices
 
 ---
 
 <h2 id="tech">🔧 Technologies</h2> 
-Tudo isso foi feito com:
+All this was done with:
 
 - [HTML5](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/css)
