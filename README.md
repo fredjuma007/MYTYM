@@ -1,4 +1,4 @@
-<img src="https://i.imgur.com/LBMFNWk.png"/>
+<img src="./assets/images/Screenshot of website.png"/>
 
 <p align="center">
  <a href="#whatis">What is it?</a> •
