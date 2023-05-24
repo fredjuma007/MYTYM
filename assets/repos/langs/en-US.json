@@ -2,8 +2,8 @@
   "today": "Hi, today is {{child}}",
   "addHabit": "{{child}} new habit",
   "welcome": {
-    "h1": "Create new habits :D",
-    "p": "Click the create habit button and start creating good habits in your 2023!"
+    "h1": "Create new habits. Overcome bad Addictions",
+    "p": "Click the create habit button and start creating good habits in your 2023 and Beyond"
   },
   "chooseHabitIcon": "choose an icon",
   "chooseHabitName": {
