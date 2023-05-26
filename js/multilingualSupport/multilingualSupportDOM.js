@@ -20,7 +20,7 @@ async function addLangaugeText() {
 		if (typeof currentLangauge[translateKey] === "object") {
 			const parentObjetct = currentLangauge[translateKey];
 
-			// goes through each "keu" of the pass object and add the text relative to the element
+			// goes through each "key" of the pass object and add the text relative to the element
 
 			Object.keys(parentObjetct).forEach(key => {
 				const elementText = parentObjetct[key]; // retain the text relative to the element
