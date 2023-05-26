@@ -1,6 +1,6 @@
-// handlers: vão lidar com eventos do DOM
+// handlers: will handles DOM: Document Object Model
 
-// lida com cliques no ícone de deletar hábito
+// handle click on delete habit icon
 
 function removeHabitHandler(element) {
   const habitId = Number(
@@ -10,7 +10,7 @@ function removeHabitHandler(element) {
   removeHabit(habitId);
 }
 
-// lida com cliques em checkboxes dentro do calendário
+// handle clicks on checkboxes within the calender
 
 function addCheckedDayHandler(element, day) {
   const habitId = Number(element.getAttribute("data-habit-id"));
@@ -18,9 +18,9 @@ function addCheckedDayHandler(element, day) {
   addCheckedDay(habitId, day);
 }
 
-// renderers: vão mudar o DOM de acordo com alterações no estado dos hábitos do usuário
+// renders: will change the DOM according to changes in the state of the  user's habits
 
-// alterna a visibilidade dos detalhes do hábito
+// toggle habit details visibilty
 
 function toggleHabitsDetails(habitElement) {
   const habitIconElement = habitElement.children[0];
@@ -38,7 +38,7 @@ function toggleHabitsDetails(habitElement) {
   }
 }
 
-// renderiza a lista de hábitos
+// renders the list of habits
 
 function renderHabits() {
   const userHabits = getHabits();
@@ -46,16 +46,16 @@ function renderHabits() {
 
   habits.innerHTML = "";
 
-  // passa por cada hábito salvo pelo usuário e adiciona os elementos HTML relativos a ele
+  // go through each habit saved by the user and add the relevant HTML elements to it
 
   userHabits.forEach((habit) => {
-    // verificação para evitar criar hábitos duplicados
+    // check to avoid creating multiple habits
 
     if (
       document.querySelectorAll(`span[data-habit-id="${habit.id}"]`).length ===
       0
     ) {
-      // insere o código HTML do hábito dentro da lista de hábitos
+      // inserts the habit HTML code into the habits list
 
       habits.insertAdjacentHTML(
         "beforeend",
@@ -87,7 +87,7 @@ function renderHabits() {
   });
 }
 
-// renderiza o calendário de hábitos
+// render the habit calender
 
 function renderCalendar() {
   const userHabits = getHabits();
@@ -95,10 +95,10 @@ function renderCalendar() {
 
   calendar.innerHTML = "";
 
-  const monthDays = getMonthDays(30); // retorna uma lista dos últimos 30 dias
+  const monthDays = getMonthDays(30); // returns a list of the last 30 days
 
   monthDays.forEach((day) => {
-    // dispara caso o número de dias no calendário não for igual ao número de dias do mês atual
+    // triggers if the numbr of the days in the calender is not equal to the number of days in the current month
 
     if (calendar.children.length !== monthDays.length) {
       calendar.insertAdjacentHTML(
@@ -111,18 +111,18 @@ function renderCalendar() {
       );
     }
 
-    // passa por cada hábito salvo pelo usuário e retorna uma lista de checkboxes relativos a ele
+    // go through the habit saved by the user and return a list of checkboxes related to it
 
     const checkboxes = userHabits.map((habit) => {
-      // verificação para evitar criar checkboxes duplicados
+      // verify to avoid creating duplicate of checkboxes
 
       if (
         document.querySelectorAll(
           `#calendar div[data-day="${day}"] input[data-habit-id="${habit.id}"]`
         ).length === 0
       ) {
-        const isChecked = habit.checkedDays.includes(day); // retorna um valor verdadeiro caso esse checkbox esteja marcado
-        const isDisabled = day !== getFormattedToday(); // retorna um valor verdadeiro caso esse checkbox não corresponda ao dia atual
+        const isChecked = habit.checkedDays.includes(day); // returns a true value if the checkbox is checked
+        const isDisabled = day !== getFormattedToday(); // returns a true value if the checkbox does not match the current day
 
         return `
           <input
@@ -136,7 +136,7 @@ function renderCalendar() {
       }
     });
 
-    // adiciona novos checkboxes ao dia atual
+    // add new checkbox to the curent day
 
     const currentDay = document.querySelector(
       `#calendar div[data-day="${day}"]`
@@ -146,7 +146,7 @@ function renderCalendar() {
   });
 }
 
-// renderiza todo o layout do formulário de hábitos
+// render the entire habit form layout
 
 function renderLayout() {
   const userHabits = getHabits();
@@ -157,25 +157,26 @@ function renderLayout() {
 
   todayElement.innerText = getFormattedToday();
 
-  // dispara se o usuário não tiver hábitos
+  // triggers if user has no habits
 
   if (userHabits.length === 0) {
-    welcomeMessage.style.display = "flex"; // mostra mensagem de boas-vindas
-    habitsForm.style.display = "none"; // oculta o formulário de hábitos
+    welcomeMessage.style.display = "flex"; // Displays welcome message
+    habitsForm.style.display = "none"; // hide the habit form
 
     return;
   }
 
-  welcomeMessage.style.display = "none"; // oculta mensagem de boas-vindas
+  welcomeMessage.style.display = "none"; // hide welcome message
 
-  // renderiza a lista de hábitos e o calendário de hábitos
+  // renders the habit list and habit calendar
 
   renderHabits();
   renderCalendar();
 
-  habitsForm.style.display = "flex"; // mostra o formulário de hábitos
+  habitsForm.style.display = "flex"; // shoe the habit form
 }
 
-// faz a primeira renderização do formulário de hábitos
+// do the first rendering of the habit
 
 renderLayout();
+//Fred Juma
