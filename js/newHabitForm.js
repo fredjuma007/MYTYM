@@ -128,7 +128,7 @@ class NewHabitForm {
 		const habitNameInput = this.element.querySelector("#habit-name-input").value;
 
 		if (habitNameInput.length === 0) {
-			alert("⚠️ Escolha um nome para o seu novo hábito.");
+			alert("⚠️ No name selected for the new Habit!.");
 			return;
 		}
 
@@ -142,3 +142,4 @@ class NewHabitForm {
 }
 
 export default NewHabitForm;
+//Fred Juma
