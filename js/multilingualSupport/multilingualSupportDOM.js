@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", () => {
 	addLangaugeText();
 });
 
-// adiciona o texto dos elementos HTML da página, de acordo com a linguagem atual
+// add text to html page based on selected language
 
 async function addLangaugeText() {
 	const availableLangs = await getAvailableLangs();
 
-	const currentLangauge = availableLangs.filter(lang => lang.selected === true)[0]; // retorna a linguagem atual
-	const elementsToAddText = document.querySelectorAll("[data-translate-key]"); // retorna os elementos que terão texto adicionado
+	const currentLangauge = availableLangs.filter(lang => lang.selected === true)[0];
+	const elementsToAddText = document.querySelectorAll("[data-translate-key]");
 
 	// passa por todos os elementos e adiciona o texto relativo ao data-translate-key
 

@@ -55,7 +55,7 @@ function getCurrentLangTag(listOfAvailableLangs) {
 				lang.startsWith(currentLang)
 			)[0];
 
-			// define a linguagem padrão como sendo inglês, caso a do usuário não esteja disponível
+			// sets the default language to english
 		} else {
 			currentLang = "en-US";
 		}
