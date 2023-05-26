@@ -1,4 +1,4 @@
-// função que retorna o dia atual no formatdo dd/mm
+// function to return the current date in dd/mm format
 
 function getFormattedToday() {
   const today = new Date().toLocaleDateString("pt-br").slice(0, 5);
@@ -6,45 +6,46 @@ function getFormattedToday() {
   return today;
 }
 
-// função que retorna uma lista de dias anteriores à data de atual
+// function that returns a list of days befor the current date
 
 function getMonthDays(numberOfDays) {
   const today = new Date();
   const previousDays = [];
 
   for (let i = 0; i < numberOfDays; i++) {
-    let day = today.getDate() - i; // retorna o dia atual e subtrai do valor de i, que é incremetado a cada loop
-    let month = today.getMonth() + 1; // retorna o mês atual
-    let year = today.getFullYear(); // retorna o dia atual
+    let day = today.getDate() - i; // returns the current date and subtracts from the value of i (increament at each loop)
+    let month = today.getMonth() + 1; // returns the current month
+    let year = today.getFullYear(); // returns the current day
 
-    // dispara se o valor de day é menor que 1,
-    // ou seja, o dia corresponde à um mês anterior
+    // fires if the current date is less than 1,
+    // i.e the day corresponds to a previous month
 
     if (day < 1) {
       let numberOfDaysInMonth = 0;
 
-      // dispara se o valor dos mês passado é igual a 1 (janeiro).
+      // fire if the value of the last month is equal 1 (january).
 
       if (month === 1) {
-        month = 12; // muda o valor para 12 (dezembro)
-        numberOfDaysInMonth = new Date(year - 1, month, 0).getDate(); // retorna o número de dias do mês 12, do ano anterior
+        month = 12; // change the value to 12 (december)
+        numberOfDaysInMonth = new Date(year - 1, month, 0).getDate(); // returns the number of days in the month 12 of the previous year
 
-        // dispara se não for o mês 1 (janeiro).
+        // fire if month is not 1 (january).
       } else {
-        month -= 1; // muda o valor para um mês anterior
-        numberOfDaysInMonth = new Date(year, month, 0).getDate(); // retorna o número de dias do mês anterior, do ano atual
+        month -= 1; // change the valuye to a previous monthh
+        numberOfDaysInMonth = new Date(year, month, 0).getDate(); // returns the number of days in the previus month, current year
       }
 
-      day = numberOfDaysInMonth - i + 1; // muda o valor do dia, para um dia anterior do mês anterior
+      day = numberOfDaysInMonth - i + 1; // change the day value, to earlier day of the prevoius month
     }
 
-    // formata os valores para obedecerem o padrão dd/mm
+    // format the values to match dd/mm
 
     if (day < 10) day = "0" + day;
     if (month < 10) month = "0" + month;
 
-    previousDays.push(`${day}/${month}`); // adiciona a data formatada no array de dias prévios
+    previousDays.push(`${day}/${month}`); // add the formatted date to the  previous days array
   }
 
   return previousDays;
 }
+//Fred Juma
