@@ -1,10 +1,10 @@
-// define a preferência de linguagem do usuário
+// sets user's prefered language
 
 function setUserLangPreference(languageTag) {
 	localStorage.setItem("lang", languageTag);
 }
 
-// retorna uma lista com as linguagem disponíveis
+// returns a list of available languages
 
 async function getAvailableLangs() {
 	let availableLangs = [];
@@ -36,19 +36,19 @@ async function getAvailableLangs() {
 	return availableLangs;
 }
 
-// retorna a linguagem de preferência do usuário
+// returns the users's preferred language
 
 function getCurrentLangTag(listOfAvailableLangs) {
 	const userLanguagePreference = localStorage.getItem("lang");
 
 	let currentLang = userLanguagePreference || navigator.language;
-	// define o código de linguagem da página com base na preferência do usuário, somente caso ela já estiver definida
-	// caso contrário, pega a linguagem do navegador do usuário
+	// sets the page language code based on the users's preference, onlyt if it's already set
+	// esle, get the user's browser language
 
-	// dispara se a tag da linguagem não corresponde a nenhuma das disponíveis
+	// fire if the language doesn't match any of the available
 
 	if (!listOfAvailableLangs.includes(currentLang)) {
-		// dispara se a linguagem do usuário não obedecer ao padrão: "linguagem-país" (ex.: pt-BR)
+		// triggers if the user's language does not comply with the pattern: "country-language" (example.: pt-BR)
 
 		if (currentLang.length === 2) {
 			currentLang = listOfAvailableLangs.filter(lang =>
@@ -63,3 +63,4 @@ function getCurrentLangTag(listOfAvailableLangs) {
 
 	return currentLang;
 }
+//Fred Juma
