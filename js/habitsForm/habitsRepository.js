@@ -1,31 +1,31 @@
-// ativa se chave "userHabits" ainda não foi definida e define um valor inicial de "[]" para ela
+// activates if key "userHabits" is not already defined and sets an initial value of "[]" for it
 
 if (localStorage.getItem("userHabits") === null) {
 	localStorage.setItem("userHabits", "[]");
 }
 
-// função que retorna os hábitos criados pelo usuário, salvos no armazenamento local do navegador
+// funtion that returns habit by the user, saved in the browser's local storage
 
 function getHabits() {
 	const userHabits = JSON.parse(localStorage.getItem("userHabits"));
 	return userHabits;
 }
 
-// função que adiciona um novo hábito ao array de hábitos criados pelo usuário
+// function that adds a new habit to the array of habits created by user
 
 function addHabit(habit) {
 	const userHabits = getHabits();
 
-	// dispara se o usuário tentar criar um hábito com o nome igual à outro já existente
+	// fire if the user tries to create a habit with the same name as an existing one
 
 	if (
 		userHabits.find(userHabit => userHabit.name === habit.name) !==
 		undefined
 	) {
-		throw new Error("❌ Você já criou um hábito com esse nome!");
+		throw new Error("❌ You already created a habit with that name!");
 	}
 
-	// adiciona o objeto de um hábito ao array de hábitos criados pelo usuário
+	// add a habit object to the arry of user-created habits
 
 	userHabits.push({
 		id: userHabits.length + 1,
@@ -34,19 +34,19 @@ function addHabit(habit) {
 		checkedDays: [],
 	});
 
-	// atualiza os dados dentro do armazenamento local do navegador
+	// updates data within the browser local storage
 
 	localStorage.setItem("userHabits", JSON.stringify(userHabits));
 
 	renderLayout();
 }
 
-// função que remove um hábito do array de hábitos criados pelo usuário
+// function that removes habit from the array of habits created by user
 
 function removeHabit(habitId) {
 	const userHabits = getHabits();
 
-	// remove o hábito do armazenamento local do navegador
+	// remove browser local storage habit
 
 	const filteredUserHabits = userHabits.filter(habit => habit.id !== habitId);
 
@@ -55,16 +55,17 @@ function removeHabit(habitId) {
   renderLayout();
 }
 
-// função que adiciona um novo dia em que um hábito foi feito
+// function that adds a new day when a habitt is done
 
 function addCheckedDay(habitId, day) {
 	const userHabits = getHabits();
 
-	// adiciona a data aos dias marcados
+	// add the date to the marked days
 
 	userHabits[habitId - 1].checkedDays.push(day);
 
-	// atualiza os dados dentro do armazenamento local do navegador
+	// update the data within the browser local storage
 
 	localStorage.setItem("userHabits", JSON.stringify(userHabits));
 }
+//Fred Juma
