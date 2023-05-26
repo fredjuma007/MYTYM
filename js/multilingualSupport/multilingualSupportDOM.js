@@ -10,22 +10,22 @@ async function addLangaugeText() {
 	const currentLangauge = availableLangs.filter(lang => lang.selected === true)[0];
 	const elementsToAddText = document.querySelectorAll("[data-translate-key]");
 
-	// passa por todos os elementos e adiciona o texto relativo ao data-translate-key
+	// go through all elements and add text relative ac data-translate-key
 
 	elementsToAddText.forEach(element => {
 		const translateKey = element.getAttribute("data-translate-key");
 
-		// dispara se o elemento estiver dentro de outro objeto
+		// fire if the element is inside the object
 
 		if (typeof currentLangauge[translateKey] === "object") {
 			const parentObjetct = currentLangauge[translateKey];
 
-			// passa por cada "key" do objeto pai, e adiciona o texto relativo ao elemento
+			// goes through each "keu" of the pass object and add the text relative to the element
 
 			Object.keys(parentObjetct).forEach(key => {
-				const elementText = parentObjetct[key]; // retorna o texto relativo ao elemento
+				const elementText = parentObjetct[key]; // retain the text relative to the element
 
-				// dispara se o elemento for um input, mudando seu placeholder
+				// fire if the element is input, changing its placeholder
 
 				if (key === "input") {
 					element
@@ -35,9 +35,9 @@ async function addLangaugeText() {
 					return;
 				}
 
-				const elementChildren = element.querySelector(key).innerHTML; // retorna o HTML interno, com os filhos do elemento
+				const elementChildren = element.querySelector(key).innerHTML; // returns the inner html with the children of the element
 
-				// adiciona o texto, mas sem alterar o HTML interno anterior
+				// add the text, but without changing the previous inner HTML
 
 				element.querySelector(key).innerHTML = elementText.replace(
 					"{{child}}",
@@ -48,9 +48,10 @@ async function addLangaugeText() {
 			return;
 		}
 
-		const elementText = currentLangauge[translateKey]; // retorna o texto relativo ao elemento
-		const elementChildren = element.innerHTML; // retorna o HTML interno, com os filhos do elemento
+		const elementText = currentLangauge[translateKey]; // returns the text relative to the element
+		const elementChildren = element.innerHTML; // returns the  inner HTML, with the children of the element
 
-		element.innerHTML = elementText.replace("{{child}}", element.innerHTML); // adiciona o texto, mas sem alterar o HTML interno anterior
+		element.innerHTML = elementText.replace("{{child}}", element.innerHTML); // adds the text but without changing the previous inner HTML
 	});
 }
+//Fred Juma
