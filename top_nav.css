@@ -8,7 +8,7 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  background: #f0faff;
+  background: #0c0d0e;
 }
 .nav {
   position: fixed;
@@ -16,7 +16,7 @@ body {
   left: 0;
   width: 100%;
   padding: 15px 200px;
-  background: #4a98f7;
+  background: #ff7b31;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .nav,
@@ -28,7 +28,7 @@ body {
   justify-content: space-between;
 }
 a {
-  color: #fff;
+  color: #0f0f0f;
   text-decoration: none;
 }
 .nav .logo {
@@ -47,7 +47,7 @@ a {
   pointer-events: none;
 }
 .nav .search-icon {
-  color: #fff;
+  color: #dad1d1;
   font-size: 20px;
   cursor: pointer;
 }
@@ -70,7 +70,7 @@ a {
   left: 15px;
   top: 50%;
   left: 15px;
-  color: #4a98f7;
+  color: #0e0d0d;
   transform: translateY(-50%);
 }
 .search-box input {
