@@ -1,4 +1,4 @@
-/* configura a paleta de cores da aplicação */
+/* cinfigures the application colour palette */
 
 :root {
   --orange: #ff7b31;
@@ -7,7 +7,7 @@
   --gray: #303037;
 }
 
-/* define propriedades básicas para os valores padrões */
+/* sets basic properties for pa values */
 
 * {
   margin: 0;
@@ -17,7 +17,7 @@
   font-family: "Inter", sans-serif;
 }
 
-/* estilização padrão */
+/* default styling */
 
 body {
   display: flex;
@@ -48,7 +48,7 @@ body {
 }
 
 #welcome-message h1::after {
-  /* content: "Comece a criar novos hábitos agora mesmo :D"; */
+  /* content: "Start creating new habits right now :D"; */
 }
 
 #welcome-message p {
@@ -64,7 +64,7 @@ body {
   }
 
   #welcome-message h1::after {
-    /* content: "Crie novos hábitos :D"; */
+    /* content: "Create new habits:D"; */
     font-size: 25px;
   }
 
@@ -150,3 +150,4 @@ input {
 .cancel-button:hover {
   opacity: 0.7;
 }
+/*Fred Juma*/
