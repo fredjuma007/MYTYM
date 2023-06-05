@@ -1,26 +1,3 @@
-/* Style Guidelines
-
-:::::Colors:::::
-Primary Green-like: #006d77
-Light Gray: ##FAFAFA
-Gray: #eeeeee
-Dark: #393e46
-Black: #222831
-
-:::::Available Weights:::::
-Montserrat:
-Light 300
-Regular 400
-Medium 500
-Bold 700
-
-Open Sans:
-Light 300
-Regular 400
-*/
-
-/* Initial Setup  
------------------------------------------------------------------------------*/
 * {
   margin: 0;
   padding: 0;
