@@ -57,6 +57,7 @@
 - [x] Add search bar for icons
 - [ ] Sychronise habits between multiple devices
 - [x] Create a separate journal webpage
+- [ ] Design an indepth backend
 
 
 ---
