@@ -54,8 +54,10 @@
 - [x] Add multiple language support
 - [ ] Fix inconsistencies in the layout
 - [ ] Separate habits history by month
-- [ ] Add search bar for icons
+- [x] Add search bar for icons
 - [ ] Sychronise habits between multiple devices
+- [x] Create a separate journal webpage
+
 
 ---
 
